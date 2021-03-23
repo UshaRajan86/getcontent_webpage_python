@@ -1,0 +1,78 @@
+The Resultant output for the code is:
+
+{
+    "Server": "nginx",
+    "Date": "Tue, 23 Mar 2021 14:39:59 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Content-Length": "140724",
+    "Connection": "close",
+    "Set-Cookie": "sessionid=h17lgfats3nz3c6xy2bo95at04z7dmw3; Domain=www.consumeraffairs.com; expires=Wed, 24-Mar-2021 14:39:59 GMT; HttpOnly; Max-Age=86400; Path=/; Secure",
+    "Vary": "Cookie",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Content-Type-Options": "nosniff"
+}
+{
+    "Date": "Tue, 23 Mar 2021 14:40:00 GMT",
+    "Expires": "-1",
+    "Cache-Control": "private, max-age=0",
+    "Content-Type": "text/html; charset=ISO-8859-1",
+    "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+    "Server": "gws",
+    "X-XSS-Protection": "0",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Set-Cookie": "CONSENT=PENDING+716; expires=Fri, 01-Jan-2038 00:00:00 GMT; path=/; domain=.google.com",
+    "Alt-Svc": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+    "Accept-Ranges": "none",
+    "Vary": "Accept-Encoding",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked"
+}
+{
+    "Server": "nginx/1.18.0 (Ubuntu)",
+    "Content-Type": "text/html; charset=\"UTF-8\"",
+    "X-Akamai-Transformed": "9 20920 0 pmb=mRUM,2",
+    "Vary": "Accept-Encoding",
+    "Cache-Control": "max-age=18387",
+    "Date": "Tue, 23 Mar 2021 14:40:00 GMT",
+    "Transfer-Encoding": "chunked",
+    "Connection": "Transfer-Encoding",
+    "Server-Timing": "edge; dur=69"
+}
+
+{
+    "Server": "nginx/1.18.0 (Ubuntu)",
+    "Content-Type": "text/html; charset=\"UTF-8\"",
+    "X-Akamai-Transformed": "9 - 0 pmb=mRUM,2",
+    "Vary": "Accept-Encoding",
+    "Cache-Control": "max-age=20863",
+    "Date": "Tue, 23 Mar 2021 14:40:00 GMT",
+    "Transfer-Encoding": "chunked",
+    "Connection": "Transfer-Encoding",
+    "Server-Timing": "edge; dur=1"
+}
+Error is for broken link:
+Traceback (most recent call last):
+  File "C:/Users/ushar/PycharmProjects/safasdf/gotit.py", line 12, in <module>
+    response1 = urlopen(v)
+  File "C:\Users\ushar\AppData\Local\Programs\Python\Python38\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\ushar\AppData\Local\Programs\Python\Python38\lib\urllib\request.py", line 509, in open
+    req = Request(fullurl, data)
+  File "C:\Users\ushar\AppData\Local\Programs\Python\Python38\lib\urllib\request.py", line 328, in __init__
+    self.full_url = url
+  File "C:\Users\ushar\AppData\Local\Programs\Python\Python38\lib\urllib\request.py", line 354, in full_url
+    self._parse()
+  File "C:\Users\ushar\AppData\Local\Programs\Python\Python38\lib\urllib\request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'www.dlghslkdhgskdgh'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ushar/PycharmProjects/safasdf/gotit.py", line 20, in <module>
+    except urllib.error.URLerror:
+AttributeError: module 'urllib.error' has no attribute 'URLerror'
+
+Process finished with exit code 1
