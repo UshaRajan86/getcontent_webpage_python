@@ -1,0 +1,21 @@
+import requests
+import re
+import urllib
+from urllib.request import urlopen
+import json
+from django.http import JsonResponse
+
+
+urls = ['https://www.consumeraffairs.com/', 'https://www.google.com/', 'https://www.geeksforgeeks.org/stack-in-python/','https://www.geeksforgeeks.org/','www.dlghslkdhgskdgh']
+try:
+   for v in urls:
+            response1 = urlopen(v)
+            Events = response1.getheaders()
+            A1 = dict(Events)
+            n={}
+            for n in [A1]:
+                n.update(A1)
+            json_object = json.dumps(n, indent=4)
+            print(json_object)
+except urllib.error.URLerror:
+        print("An exception occurred-payload error")
